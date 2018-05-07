@@ -1,0 +1,84 @@
+:root {
+    --primary: #425286;
+    --secundary: #3d96c0;
+    --accept: #2c5c42;
+    --background: #5fc28c;
+    --text: #011015;
+    --font: 'Handlee', cursive;
+    --light: #f8f9fa;
+    --cyan: #17a2b8;
+    --teal: #20c997;
+}
+
+.primary {
+    color: var(--primary);
+}
+
+.secundary {
+    color: var(--secundary);
+}
+
+.accept {
+    color: var(--accept);
+}
+
+.background {
+    background-color: var(--background);
+}
+
+.text {
+    color: var(--text);
+}
+
+.font {
+    font-family: var(--font);
+}
+
+.nav-custom {
+    border: .1em solid var(--secundary);
+    background-color: var(--accept);
+    font-size: 1.5rem;
+}
+
+.nav-text {
+    color: var(--light);
+}
+
+.nav-text:hover {
+    color: var(--cyan);
+}
+
+.nav-first {
+    border-radius: 5em 0em 0em 5em;
+}
+
+.nav-last {
+    border-radius: 0em 5em 5em 0em;
+}
+
+.title {
+    font-size: 2em;
+}
+
+.title-name {
+    text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+    .title-name {
+        margin-left: 2em;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 440px) {
+    .nav {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 439px) {
+    .nav {
+        display: none;
+    }
+}
